@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Signup</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg">
+    <div class="home">
+        <form id="login-form">
+            <h2>Iniciar sesión</h2>
+            <div class="row">
+                <div class="col-100">
+                    <label>Email</label>
+                    <input type="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100">
+                    <label>Contraseña</label>
+                    <input type="password">
+                </div>
+            </div>
+            <div class="col-100 flex j-end a-center">
+                <button class="outline mr" 
+                        type="button"
+                        id="register-btn">
+                        Registrarse
+                </button>
+                <a href="./parte.html" type="submit">
+                    Entrar
+                </a>
+            </div>
+        </form>
+        <form id="register-form" role="form" style="display: none;">
+            <h2>Crear cuenta</h2>
+            <div class="row">
+                <div class="col-50 p-r">
+                    <label>Nombre</label>
+                    <input type="text">
+                </div>
+                <div class="col-50 p-l">
+                    <label>Apellidos</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100">
+                    <label>Email</label>
+                    <input type="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100">
+                    <label>Contraseña</label>
+                    <input type="password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100">
+                    <label>Repita contraseña</label>
+                    <input type="password">
+                </div>
+            </div>
+            <div class="col-100 flex j-end a-center">
+                <button class="outline mr" 
+                        type="button"
+                        id="login-btn">
+                    Iniciar sesión
+                </button>
+                <a href="./parte.html" type="submit">
+                    Entrar
+                </a>
+            </div>
+        </form>
+    </div>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" 
+			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+			crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

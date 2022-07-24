@@ -1,0 +1,212 @@
+<!DOCTYPE html5>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte de trabajo</title>
+    <link rel="stylesheet" href="./css/style.css">
+	<style>
+		#signature1,
+		#signature2 {
+			position: relative;
+			width: 100%;
+			height: 200px;
+			background-color: none;
+			border: solid 2px lightgray;
+			border-radius: 2rem;
+			margin: 1rem auto;
+		}
+	</style>
+</head>
+<body>
+	<form name="parte" action="./partes.php" method="post">
+		<p class="form-title">Operaciones</p>
+		<div class="checkbox-container">
+			<div class="checkbox">
+				<label for="instalacion">Instalación</label>
+				<input type="checkbox" name="instalacion" id="instalacion" value="Instalación">
+			</div>
+			<div class="checkbox">
+				<label for="mantenimiento">Mantenimiento</label>
+				<input type="checkbox" name="mantenimiento" id="mantenimiento" value="Mantenimiento">
+			</div>
+			<div class="checkbox">
+				<label for="reparacion">Reparación</label>
+				<input type="checkbox" name="reparacion" id="reparacion" value="Reparación">
+			</div>
+			<div class="checkbox">
+				<label for="presupuesto">Presupuesto</label>
+				<input type="checkbox" name="presupuesto" id="presupuesto" value="Presupuesto">
+			</div>
+		</div>
+		<p class="form-title">Cliente</p>
+		<div class="row">
+			<div class="col-100">
+				<label for="cliente">Nombre Cliente</label>
+				<input type="text" name="cliente" id="cliente">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-50 p-r">
+				<label for="cif">NIF / CIF</label>
+				<input type="text" name="cif" id="cif">
+			</div>
+			<div class="col-50 p-l">
+				<label for="fecha">Fecha</label>
+				<input type="date" name="fecha" id="fecha">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-100">
+				<label for="direccion">Dirección</label>
+				<input type="text" name="direccion" id="direccion">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-100">
+				<label for="poblacion">Población</label>
+				<input type="text" name="poblacion" id="poblacion">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-33 p-r">
+				<label for="telefono">Teléfono</label>
+				<input type="tel" name="telefono" id="telefono">
+			</div>
+			<div class="col-33">
+				<label for="fax">FAX</label>
+				<input type="tel" name="fax" id="fax">
+			</div>
+			<div class="col-33 p-l">
+				<label for="movil">Móvil</label>
+				<input type="tel" name="movil" id="movil">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-100">
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email">
+			</div>
+		</div>
+		<p class="form-title">Aparato</p>
+		<div class="row">
+			<div class="col-50 p-r">
+				<label for="marca">Marca aparato</label>
+				<input type="text" name="marca" id="marca">
+			</div>
+			<div class="col-50 p-l">
+				<label for="modelo">Modelo</label>
+				<input type="text" name="modelo" id="modelo">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-50 p-r">
+				<label for="serie">Número serie</label>
+				<input type="text" name="serie" id="serie">
+			</div>
+			<div class="col-50 p-l">
+				<label for="potencia">Potencia</label>
+				<input type="text" name="potencia" id="potencia">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-50 p-r">
+				<label for="fabricacion">Año fabricación</label>
+				<input type="text" name="fabricacion" id="fabricacion">
+			</div>
+			<div class="col-50 p-l">
+				<label for="tipo">Tipo / Código</label>
+				<input type="text" name="tipo" id="tipo">
+			</div>
+		</div>
+		<p class="form-title">Técnico</p>
+		<div class="row">
+			<div class="col-50 p-r">
+				<label for="tecnico">Técnico</label>
+				<input type="text" name="tecnico" id="tecnico">
+			</div>
+			<div class="col-50 p-l">
+				<label for="ayudante">Ayudante</label>
+				<input type="text" name="ayudante" id="ayudante">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-33 p-r">
+				<label for="entrada">Entrada</label>
+				<input type="text" name="entrada" id="entrada">
+			</div>
+			<div class="col-33">
+				<label for="salida">Salida</label>
+				<input type="text" name="salida" id="salida">
+			</div>
+			<div class="col-33 p-l">
+				<label for="horas">Total horas</label>
+				<input type="text" name="horas" id="horas">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-50 p-r">
+				<label for="desplazamiento">Desplazamiento (KM)</label>
+				<input type="text" name="desplazamiento" id="desplazamiento">
+			</div>
+			<div class="col-50 p-l">
+				<label for="festivo">Fin de semana / Festivo</label>
+				<input type="text" name="festivo" id="festivo">
+			</div>
+		</div>
+		<p class="form-title">Observaciones</p>
+		<div class="row">
+			<div class="col-100">
+				<textarea type="text" name="observaciones" id="observaciones"></textarea>	
+			</div>
+		</div>
+		<p class="form-title">Materiales</p>
+		<div class="row">
+			<div class="col-50">
+				<label for="materiales">Materiales</label>
+				<input type="text" name="materiales1" id="materiales">
+				<input type="text" name="materiales2" id="materiales">
+				<input type="text" name="materiales3" id="materiales">
+				<input type="text" name="materiales4" id="materiales">
+			</div>
+			<div class="col-25">
+				<label for="cantidad">Cantidad</label>
+				<input type="text" name="cantidad1" id="cantidad">
+				<input type="text" name="cantidad2" id="cantidad">
+				<input type="text" name="cantidad3" id="cantidad">
+				<input type="text" name="cantidad4" id="cantidad">
+			</div>
+			<div class="col-25">
+				<label for="total">Total €</label>
+				<input type="text" name="total1" id="total">
+				<input type="text" name="total2" id="total">
+				<input type="text" name="total3" id="total">
+				<input type="text" name="total4" id="total">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-50 p-r flex-column">
+				<label for="firma-tecnico">Firma del técnico</label>
+				<canvas id="signature1"></canvas>
+			</div>
+			<div class="col-50 p-l flex-column">
+				<label for="firma-cliente">Firma del cliente</label>
+				<canvas id="signature2"></canvas>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-100 flex j-end a-center">
+				<button class="outline mr" 
+						type="reset">
+					Cancelar
+				</button>
+				<button type="submit" id="jpeg">
+					Enviar
+				</button>
+			</div>
+		</div>
+	</form>
+	<script src="./js/signature.js"></script>
+</body>
+</html>
